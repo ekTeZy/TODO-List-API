@@ -96,11 +96,11 @@ def tasks_post():
 
 @tasks_bp.route("/<int:task_id>", methods=["DELETE"])
 def task_delete(task_id):
-    auth_data = request.get_json()
+    data = request.get_json()
     
     
     try:
-        TaskValidator.validate_delete_data(auth_header=auth_data)
+        TaskValidator.validate_delete_data(data=data)
     
     except Exception as e:
         # логируем ошибку валидации
