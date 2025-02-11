@@ -13,11 +13,9 @@ __pycache__/
 *.log
 *.tmp
 *.sh
-*.github
 
 Dockerfile
 *.yaml
-*.yml
 
 pip-log.txt
 pip-delete-this-directory.txt
